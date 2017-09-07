@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Contains c_logger.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_help().
+ */
+function c_logger_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the c_logger module.
+    case 'help.page.c_logger':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function c_logger_theme() {
+  return [
+    'c_logger' => [
+      'template' => 'c_logger',
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function c_logger_node_update($node) {
+ $type  = $node->type->target_id;
+ //“Node with title %NODE_TITLE% of type %NODE_TYPE% has been updated“ 
+ $title = $node->title->value;
+ $message = 'Node With title "'.$title.'" of Type "'.$type.'" Has been Updated';
+ \Drupal::logger('Node Updates')->notice($message);
+
+// foreach ($node as  $value) {
+//   dsm($value);
+//   $type = $value['title'];
+//   //echo $type;
+  
+// }
+
+}
+  

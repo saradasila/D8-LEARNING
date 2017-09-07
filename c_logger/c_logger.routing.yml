@@ -1,0 +1,8 @@
+
+c_logger.default_controller_hello:
+  path: '/c_logger/hello'
+  defaults:
+    _controller: '\Drupal\c_logger\Controller\DefaultController::hello'
+    _title: 'hello'
+  requirements:
+    _permission: 'access content'

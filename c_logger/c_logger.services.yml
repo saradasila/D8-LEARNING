@@ -1,0 +1,4 @@
+services:
+  myservice_that_needs_to_log_to_multiple_channels:
+    class: Drupal\c_logger\MyService
+    arguments: ['@logger.factory']
