@@ -1,0 +1,16 @@
+MY TEMPLATE GOES HERE
+{% if var1 %}
+
+ <span class="var1">{{ var1 }}</span>
+
+{% endif %}
+
+{% if var2[3]['g'] %}
+ {{ var2[3]['g'] }}
+{% endif %}
+
+<div{{ attributes.addClass(myclasses) }}>
+    Printing a translatable string - {{ 'Hello'|t }}
+</div>
+
+

@@ -1,0 +1,5 @@
+entity.newentity.add_form:
+  route_name: entity.newentity.add_form
+  title: 'Add Newentity'
+  appears_on:
+    - entity.newentity.collection

@@ -1,0 +1,14 @@
+
+# Newentity menu items definition
+entity.newentity.collection:
+  title: 'Newentity list'
+  route_name: entity.newentity.collection
+  description: 'List Newentity entities'
+  parent: system.admin_structure
+  weight: 100
+
+newentity.admin.structure.settings:
+  title: Newentity settings
+  description: 'Configure Newentity entities'
+  route_name: newentity.settings
+  parent: system.admin_structure

@@ -1,0 +1,5 @@
+name: Hello world Custom Module
+description: 'Showing Hello World'
+type: module
+package: custom
+core: 8.x

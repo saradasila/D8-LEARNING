@@ -1,0 +1,9 @@
+
+mymodule.default_form:
+  path: '/mymodule/form/default'
+  defaults:
+    _form: '\Drupal\mymodule\Form\DefaultForm'
+    _title: 'Candidate Form'
+  requirements:
+    _access: 'TRUE'
+  

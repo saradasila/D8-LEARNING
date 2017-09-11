@@ -1,0 +1,10 @@
+summary-count:
+  version: 1.x
+  css:
+      theme:
+         css/redesign.css: {}
+  js:      
+    js/custom.js: {}        
+  dependencies:
+    - core/jquery
+    - core/drupal

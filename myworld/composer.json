@@ -1,0 +1,14 @@
+{
+  "name": "drupal/myworld",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/myworld",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/myworld",
+    "source": "http://cgit.drupalcode.org/myworld"
+  },
+  "require": { }
+}

@@ -1,0 +1,7 @@
+hello_world.settings_form:
+  title: 'SettingsForm'
+  route_name: hello_world.settings_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

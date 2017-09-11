@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains myworld.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function myworld_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the myworld module.
+    case 'help.page.myworld':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function myworld_theme($existing, $type, $theme, $path) {
+  return [
+    'my_world' => [
+      'template' => 'my-world','render element' => 'children',
+      '#theme' => 'my-world',
+       'variables' => array(
+        'pro_data' => NULL,
+        ),
+    ],
+  ];
+}
+
+function myworld_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'myworld/summary-count';
+}

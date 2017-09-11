@@ -1,0 +1,22 @@
+{#
+/**
+ * @file newentity.html.twig
+ * Default theme implementation to present Newentity data.
+ *
+ * This template is used when viewing Newentity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_newentity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('newentity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

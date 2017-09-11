@@ -1,0 +1,27 @@
+# Newentity routing definition
+newentity.settings_tab:
+  route_name: newentity.settings
+  title: 'Settings'
+  base_route: newentity.settings
+
+entity.newentity.canonical:
+  route_name: entity.newentity.canonical
+  base_route: entity.newentity.canonical
+  title: 'View'
+
+entity.newentity.edit_form:
+  route_name: entity.newentity.edit_form
+  base_route: entity.newentity.canonical
+  title: 'Edit'
+
+entity.newentity.version_history:
+  route_name: entity.newentity.version_history
+  base_route: entity.newentity.canonical
+  title: 'Revisions'
+
+entity.newentity.delete_form:
+  route_name:  entity.newentity.delete_form
+  base_route:  entity.newentity.canonical
+  title: Delete
+  weight: 10
+

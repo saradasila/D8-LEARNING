@@ -1,0 +1,33 @@
+add newentity entities:
+  title: 'Create new Newentity entities'
+
+administer newentity entities:
+  title: 'Administer Newentity entities'
+  description: 'Allow to access the administration form to configure Newentity entities.'
+  restrict access: true
+
+delete newentity entities:
+  title: 'Delete Newentity entities'
+
+edit newentity entities:
+  title: 'Edit Newentity entities'
+
+access newentity overview:
+  title: 'Access the Newentity overview page'
+
+view published newentity entities:
+  title: 'View published Newentity entities'
+
+view unpublished newentity entities:
+  title: 'View unpublished Newentity entities'
+
+view all newentity revisions:
+  title: 'View all Newentity revisions'
+
+revert all newentity revisions:
+  title: 'Revert all Newentity revisions'
+  description: 'Role requires permission <em>view Newentity revisions</em> and <em>edit rights</em> for newentity entities in question or <em>administer newentity entities</em>.'
+
+delete all newentity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Newentity revisions</em> and <em>delete rights</em> for newentity entities in question or <em>administer newentity entities</em>.'
